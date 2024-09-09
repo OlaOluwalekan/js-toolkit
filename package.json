@@ -1,0 +1,46 @@
+{
+  "name": "js-toolkit",
+  "version": "1.0.0",
+  "description": "A JavaScript/TypeScript utility library for various string, array and object manipulations that are not available in pure JavaScript",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && tsc --project tsconfig.cjs.json",
+    "watch": "nodemon"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlaOluwalekan/js-toolkit.git"
+  },
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "string",
+    "array",
+    "objects",
+    "manipulation",
+    "utilities",
+    "tools"
+  ],
+  "author": "OlaOluwalekan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OlaOluwalekan/js-toolkit/issues"
+  },
+  "homepage": "https://github.com/OlaOluwalekan/js-toolkit#readme",
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
